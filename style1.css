@@ -42,9 +42,9 @@ button:hover {
   background-color: #0844a6;
 }
 
-/* Style the sign up and cancel buttons */
-.signup,
-.cancel {
+/* Style the login and create account buttons */
+.login,
+.createacc {
   font-size: 20px;
   background-color: #0d67ee;
   color: white;
@@ -52,9 +52,9 @@ button:hover {
   padding: 10px 20px;
 }
 
-/* Style the sign up and cancel buttons when hovering over them */
-.signup:hover,
-.cancel:hover {
+/* Style the login and create account buttons when hovering over them */
+.login:hover,
+.createacc:hover {
   background-color: #0844a6;
 }
 
@@ -68,15 +68,14 @@ label {
 
 /* Style the logo image */
 img {
-  max-width: 90%;
-  height: auto;
-  margin-bottom: 40px;
-  margin-top: 60px;
+  max-width: 100%; /* set the maximum width of the image to 100% of its container */
+  height: auto; /* maintain the aspect ratio of the image */
+  margin-bottom: 40px; /* add a margin of 40 pixels to the bottom of the image */
+  margin-top: 100px;
 }
 
 /* Style the form container */
-.container {
-  width: 500px;
+form {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 5px;
