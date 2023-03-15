@@ -1,12 +1,32 @@
-<!-- tracking_status.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>Tracking Status</title>
   </head>
   <body>
-    <h3>Traccking Status</h3>
+    <img src="transit_genie_logo.png" alt="Logo" title="Main Logo" />
+
+    <h3>Tracking Status</h3>
+
+    <div class="container">
+      <label for="final_dest"><b>Destination</b></label>
+      <input type="text" name="final_dest" value="Stanford University" />
+
+      <img src="tracking_map.png" class="track" />
+
+      <button type="button" onclick="window.location.href='./payment.html'">
+        Back
+      </button>
+
+      <button
+        type="button"
+        onclick="window.location.href='./homepage2.html'"
+        class="right-btn"
+      >
+        Home
+      </button>
+    </div>
   </body>
 </html>

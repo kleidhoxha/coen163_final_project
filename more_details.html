@@ -1,12 +1,50 @@
-<!-- more_details.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>More Details</title>
   </head>
   <body>
+    <img src="transit_genie_logo.png" alt="Logo" title="Main Logo" />
+
     <h3>More Details</h3>
+
+    <div class="container">
+      <label for="org"><b>From</b></label>
+      <input type="text" name="org" value="Santa Clara University" />
+
+      <label for="dest"><b>From</b></label>
+      <input type="text" name="dest" value="Stanford University" />
+
+      <img src="tracking_map.png" alt="track_map" class="track" />
+
+      <div class="half">
+        <div class="left-half">
+          <label for="next_bus"><b>Next Bus</b></label>
+          <input
+            type="text"
+            name="next_bus"
+            value="12 min"
+            style="width: 85%"
+          />
+        </div>
+
+        <div id="right-half">
+          <label for="buy" id="label1"><b>Buy</b></label>
+          <button
+            type="button"
+            id="button1"
+            onclick="window.location.href='./payment.html'"
+          >
+            $2.50
+          </button>
+        </div>
+      </div>
+
+      <button onclick="window.location.href='./potential_routes.html'">
+        Back
+      </button>
+    </div>
   </body>
 </html>

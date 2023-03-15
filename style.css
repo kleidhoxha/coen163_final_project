@@ -30,11 +30,12 @@ button {
   font-size: 20px;
   background-color: #0d67ee;
   color: white;
-  margin-right: 10px;
+  margin-right: 20px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Style the buttons when hovering over them */
@@ -42,20 +43,8 @@ button:hover {
   background-color: #0844a6;
 }
 
-/* Style the sign up and cancel buttons */
-.signup,
-.cancel {
-  font-size: 20px;
-  background-color: #0d67ee;
-  color: white;
-  margin-right: 10px;
-  padding: 10px 20px;
-}
-
-/* Style the sign up and cancel buttons when hovering over them */
-.signup:hover,
-.cancel:hover {
-  background-color: #0844a6;
+.right-btn {
+  float: right;
 }
 
 /* Style the form labels */
@@ -68,10 +57,29 @@ label {
 
 /* Style the logo image */
 img {
-  max-width: 90%;
+  max-width: 500px;
   height: auto;
   margin-bottom: 40px;
   margin-top: 60px;
+}
+
+.track {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.route {
+  max-width: 10%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.route-icon {
+  width: 20%; /* adjust as needed */
+  margin-right: 20px; /* spacing between icon and details */
 }
 
 /* Style the form container */
@@ -81,4 +89,37 @@ img {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.two_side-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half {
+  width: 100%;
+  overflow: hidden;
+}
+
+.left-half {
+  width: 50%;
+  float: left;
+}
+
+.right-half {
+  width: 50%;
+  float: right;
+}
+
+.route-container {
+  display: flex;
+  align-items: center;
+}
+
+.route-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* fills remaining space */
 }

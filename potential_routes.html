@@ -1,12 +1,51 @@
-<!-- potential_routes.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>Potential Routes</title>
   </head>
   <body>
+    <img src="transit_genie_logo.png" alt="Logo" title="Main Logo" />
+
     <h3>Potential Routes</h3>
+
+    <div class="container">
+      <div class="route-container">
+        <img src="route1_train.png" alt="Route 1" class="route-icon" />
+        <div class="route-details">
+          <h4>Train</h4>
+          <p>Description of Route 1</p>
+        </div>
+      </div>
+
+      <div class="route-container">
+        <img src="route2_bus.png" alt="Route 2" class="route-icon" />
+        <div class="route-details">
+          <h4>Bus</h4>
+          <p>Description of Route 1</p>
+        </div>
+      </div>
+
+      <div class="route-container">
+        <img src="route3_mul_bus.png" alt="Route 3" class="route-icon" />
+        <div class="route-details">
+          <h4>Multiple Buses</h4>
+          <p>Description of Route 1</p>
+        </div>
+      </div>
+
+      <button type="button" onclick="window.location.href='./homepage.html'">
+        Back
+      </button>
+
+      <button
+        type="button"
+        class="right-btn"
+        onclick="window.location.href='./more_details.html'"
+      >
+        Confirm
+      </button>
+    </div>
   </body>
 </html>
