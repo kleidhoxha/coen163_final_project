@@ -57,12 +57,19 @@
     </div>
 
     <div class="container">
-      <button
-        type="button"
-        onclick="window.location.href='./tracking_status.html'"
-      >
-        Tracking Live
-      </button>
+      <div class="left-half">
+        <label for="time_left"><b>Arriving in...</b></label>
+        <input type="text" name="time_left" value="12 minutes" />
+      </div>
+      <div class="right-half">
+        <button
+          type="button"
+          onclick="window.location.href='./tracking_status.html'"
+          style="float: right; margin-top: 30px"
+        >
+          Track Live
+        </button>
+      </div>
     </div>
   </body>
 </html>
